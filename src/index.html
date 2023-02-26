@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Journal Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="bundle.js"></script>
+  <script src="journal.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+</head>
+<body>
+  <div class="container">
+    <h1>Journal</h1>
+    <h3>We'll show how many vowels and consonants are in your journal.</h3>
+    <form id="journal-form">
+        <div class="form-group">
+            <label for ="title">Enter a title for your journal entry: </label>
+            <input type="text" id="title" class="form-control">
+            <br>
+            <br>
+            <label for="body">Write your journal entry</label>
+            <input type="text" id="body" class="form-control">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+    </form>
+  </div>
+  <div class="container result">
+    <div id="result" class="well">
+      <p>Your journal - <span class="title"></span>, includes <span id="wordCount"></span> words,<span id="vowel"></span> vowels and <span id="consonant"></span> consonants.</p>
+      <p>Here is the beginning of the journal: <span id="first-sentence"></span></p>
+    </div>
+</body>
+</html>
